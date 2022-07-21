@@ -15,7 +15,7 @@ class BankServiceTest {
         form.$("[data-test-id='phone'] input").setValue("+79099876545");
         form.$("[data-test-id='agreement']").click();
         form.$("button").click();
-        $("[data-test-id='order-success']").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее врем."));
+        $("[data-test-id='order-success']").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 
     @Test
@@ -25,7 +25,7 @@ class BankServiceTest {
         form.$("[data-test-id='phone'] input").setValue("+79099876545");
         form.$("[data-test-id='agreement']").click();
         form.$(".button").click();
-        $(".input__sub").shouldHave(exactText("Поле обязательно для заполнени"));
+        $(".input__sub").shouldHave(exactText("Поле обязательно для заполнения"));
     }
 
 }
